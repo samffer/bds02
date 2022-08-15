@@ -31,7 +31,7 @@ public class CityControllerIT {
 	private ObjectMapper objectMapper;
 	
 	@Test
-	public void findAllShouldReturnAllResourcesSortedByName() throws Exception {
+	public void findAllShouldReturnAllResourcesSortedByName() throws Exception {  //nao paginado
 		
 		ResultActions result =
 				mockMvc.perform(get("/cities")
