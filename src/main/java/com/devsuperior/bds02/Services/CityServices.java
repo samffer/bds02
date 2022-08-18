@@ -32,4 +32,10 @@ public class CityServices {
 		return new CityDTO(city);
 	}
 
+	public void delete(Long id) throws Exception{
+		
+		repository.deleteById(id);
+		
+	}
+
 }
